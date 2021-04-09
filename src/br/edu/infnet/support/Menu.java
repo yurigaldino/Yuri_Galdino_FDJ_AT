@@ -18,7 +18,9 @@ public class Menu {
     static int choiceApproved;
 
     public static int menu() {
-        System.out.println("\n-------------------------\nACME - Sistema de Compras\n-------------------------\nMENU:\n");
+        System.out.println("\n-------------------------\nACME - Sistema de Compras\n-------------------------");
+        br.edu.infnet.Application.DateNow();
+        System.out.println("\nMENU:\n");
 
         System.out.println("[1] Cadastrar produtos.\n"
                 + "[2] Atualizar produtos.\n"

@@ -9,6 +9,8 @@ import br.edu.infnet.support.Menu;
 import br.edu.infnet.support.Service;
 import java.util.Locale;
 import java.text.NumberFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
@@ -89,4 +91,12 @@ public class Application {
         return randomQuotation;
     }
 
+    public static void DateNow() {
+        
+    LocalDateTime myDateObj = LocalDateTime.now();
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+
+    String formattedDate = myDateObj.format(myFormatObj);
+    System.out.println("Data e hora de acesso: " + formattedDate);
+}
 }
